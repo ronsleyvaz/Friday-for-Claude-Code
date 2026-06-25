@@ -1,12 +1,7 @@
 ---
 name: voice-installer
 description: Build your voice profile. Interviews you, reads your writing samples, writes friday/voice.md plus a voice block in CLAUDE.md, then rewrites a sample paragraph in your voice. Self-contained, no dependencies.
-audience: external-general
-skadoosh:
-  shape: copy-paste-template
-  action: "Run /voice-installer in Claude Code to write your voice profile to disk right now."
 ---
-<!-- audience: external-general -->
 # /voice-installer
 
 Build your voice profile in five minutes. This command interviews you, reads two or three pieces of your writing, and writes a real voice config to your machine. Every AI tool you use will start sounding like you instead of ChatGPT.
@@ -99,7 +94,7 @@ This is a live rewrite, not a word-swap. You have the founder's name, tone, phra
 Print these two lines:
 
 - Your voice profile is at `friday/voice.md`. Open it, read it, add to it any time.
-- This is brick 1 of your `friday/` config. The next brick appends to the same folder.
+- This is the first capability in your `friday/` config. The next one appends to the same folder.
 
 ## What comes next
 

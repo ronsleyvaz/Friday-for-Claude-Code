@@ -1,10 +1,3 @@
----
-audience: external-general
-skadoosh:
-  shape: copy-paste-template
-  action: "Run /voice-installer in Claude Code to write your voice profile to disk right now."
----
-<!-- audience: external-general -->
 # Why Your AI Sounds Like Everyone Else (and How to Fix It in Five Minutes)
 
 Every founder using AI writes the same way. Not because they think the same. Because every AI tool ships with the same default voice: corporate, hedged, and trained on the internet's median.
@@ -81,13 +74,13 @@ The before/after is the proof. Not a promise. You see it, you own it.
 
 ## What comes next
 
-This is brick 1. One capability, installed by hand, producing one visible result.
+This is the first capability. Installed by hand, producing one visible result.
 
-Brick 2 adds decision reasoning. Your AI will run the 1-3-1 protocol (one problem, three options, one pick) on any real decision you paste in. Same `friday/` folder. One more brick.
+The Decision Runner comes next. It adds decision reasoning. Your AI will run a simple protocol on any real decision you paste in: one problem, three options, one pick. Same `friday/` folder. One more file on disk.
 
 The full stack, nine specialists wired together and running while you sleep, is Friday. That is the $1,499 product. This is what one piece of it feels like.
 
-When you hit a capability that needs your inbox, your calendar, or your transcript archive, the brick will not do it. That is by design. That is the wall. And that is when the upgrade makes sense.
+When you hit something that needs your inbox, your calendar, or your transcript archive, it will not do it. That is by design. That is the wall. And that is when the upgrade makes sense.
 
 ---
 

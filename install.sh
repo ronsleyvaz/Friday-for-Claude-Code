@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-# Friday for Claude Code: Voice Installer (brick 1).
+# Friday for Claude Code: Voice Installer.
 # Installs the /voice-installer command into your Claude Code.
 # No account, no paid install, nothing phones home.
 
