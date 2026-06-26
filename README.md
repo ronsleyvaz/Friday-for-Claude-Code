@@ -28,6 +28,8 @@ Open Claude Code in your project directory and run:
 
 This is the foundation. It reads your writing samples, builds a voice profile, and writes it to `friday/voice.md`. Every command that runs after reads that profile and writes in your voice instead of generic AI voice.
 
+Want the full walkthrough first? The manual covers every command, the `friday/` folder, and how to extend Foundation: [`docs/foundation-manual.md`](docs/foundation-manual.md).
+
 ---
 
 ## What each command does
@@ -37,8 +39,8 @@ This is the foundation. It reads your writing samples, builds a voice profile, a
 | `/voice-installer` | Builds your voice profile from writing samples | `friday/voice.md` |
 | `/brief` | Filters today's priorities through your nine decisions | `friday/morning.md` |
 | `/decide` | Runs the 1-3-1 protocol: one problem, three options, one pick | `friday/decisions.md` |
-| `/meetingprep` | Prepares you for any meeting in five minutes | `friday/meeting-<name>.md` |
-| `/weeklyreview` | Structured weekly review and one clear priority | `friday/weekly-<date>.md` |
+| `/meetingprep` | Prepares you for any meeting in five minutes | `friday/meetings.md` |
+| `/weeklyreview` | Structured weekly review and one clear priority | `friday/review.md` |
 | `/amplify` | Runs the Amplify growth diagnostic on your numbers | `friday/growth.md` |
 | `/new-capability` | Scaffolds a new command from a template | `commands/<name>.md` |
 
