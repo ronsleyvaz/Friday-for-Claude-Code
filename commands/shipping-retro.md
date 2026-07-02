@@ -4,7 +4,7 @@ description: A weekly reflection built from your real git history. Reads recent 
 ---
 # /shipping-retro
 
-`/weeklyreview` covers your whole week. This command is narrower: it looks at what you actually shipped in code, using your real commit history as the anchor, then asks what worked and what carried a cost. Ships standalone rather than folding into `/weeklyreview`, because not every founder using Friday Foundation ships code every week, and this command should stay skippable for the weeks that don't apply.
+`/weeklyreview` covers your whole week. This command is narrower: it looks at what you actually shipped in code, using your real commit history as the anchor, then asks what worked and what carried a cost. It ships standalone rather than folding into `/weeklyreview`, because not every founder using Friday Foundation ships code every week, and this command should stay skippable for the weeks that don't apply.
 
 You, Claude, run the whole flow below in order, using your own file tools. There is no module to import and nothing to install.
 
@@ -52,7 +52,7 @@ If you have commit history, show it to the founder first:
 
 Ask three questions, one at a time. Wait for each answer before asking the next.
 
-**Question 1:** Looking at what shipped, what actually moved the business forward? Not everything that shipped matters equally, name what mattered.
+**Question 1:** Looking at what shipped, what actually moved the business forward? Not everything that shipped matters equally. Name what mattered.
 
 **Question 2:** What hurt? Name anything that took longer than it should have, broke something, or you're not happy with the way it came out.
 
