@@ -21,6 +21,9 @@ set -euo pipefail
 #   curl -fsSL .../install.sh | bash -s -- validate-idea     -- installs just /validate-idea
 #   curl -fsSL .../install.sh | bash -s -- go-to-market      -- installs just /go-to-market
 #   curl -fsSL .../install.sh | bash -s -- pricing-strategy  -- installs just /pricing-strategy
+#   curl -fsSL .../install.sh | bash -s -- offer-creation    -- installs just /offer-creation
+#   curl -fsSL .../install.sh | bash -s -- competitive-analysis -- installs just /competitive-analysis
+#   curl -fsSL .../install.sh | bash -s -- sop-builder       -- installs just /sop-builder
 #
 # The no-argument path installs the full command pack, CLAUDE.md.template,
 # and the harness/ guide to the current working directory.
@@ -52,6 +55,9 @@ PACK_COMMANDS=(
   "validate-idea    validate-idea.md    /validate-idea"
   "go-to-market     go-to-market.md     /go-to-market"
   "pricing-strategy pricing-strategy.md /pricing-strategy"
+  "offer-creation   offer-creation.md   /offer-creation"
+  "competitive-analysis competitive-analysis.md /competitive-analysis"
+  "sop-builder      sop-builder.md      /sop-builder"
 )
 
 # Harness guide files fetched alongside the full pack.
@@ -152,6 +158,9 @@ if [ -z "${CAPABILITY}" ]; then
   echo "  /validate-idea     -- 7-dimension validation, build/pivot/kill verdict"
   echo "  /go-to-market      -- phased launch plan, pre-launch through 90 days"
   echo "  /pricing-strategy  -- value-based pricing and tier design"
+  echo "  /offer-creation    -- value-equation review, find the weakest lever"
+  echo "  /competitive-analysis -- competitor teardown, matrix plus SWOT"
+  echo "  /sop-builder       -- turn a repeatable process into a followable SOP"
   echo
   echo "Read harness/00-how-friday-works.md to understand what you just installed."
 
@@ -175,7 +184,7 @@ else
 
   if [ -z "${matched}" ]; then
     echo "Unknown capability: ${CAPABILITY}"
-    echo "Available: voice-installer, decide, brief, meetingprep, weeklyreview, amplify, new-capability, explore-idea, scope-decision, learnings, shipping-retro, teach-team, validate-idea, go-to-market, pricing-strategy"
+    echo "Available: voice-installer, decide, brief, meetingprep, weeklyreview, amplify, new-capability, explore-idea, scope-decision, learnings, shipping-retro, teach-team, validate-idea, go-to-market, pricing-strategy, offer-creation, competitive-analysis, sop-builder"
     exit 1
   fi
 fi
