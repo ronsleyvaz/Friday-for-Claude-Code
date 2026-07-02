@@ -18,6 +18,9 @@ set -euo pipefail
 #   curl -fsSL .../install.sh | bash -s -- learnings         -- installs just /learnings
 #   curl -fsSL .../install.sh | bash -s -- shipping-retro    -- installs just /shipping-retro
 #   curl -fsSL .../install.sh | bash -s -- teach-team        -- installs just /teach-team
+#   curl -fsSL .../install.sh | bash -s -- validate-idea     -- installs just /validate-idea
+#   curl -fsSL .../install.sh | bash -s -- go-to-market      -- installs just /go-to-market
+#   curl -fsSL .../install.sh | bash -s -- pricing-strategy  -- installs just /pricing-strategy
 #
 # The no-argument path installs the full command pack, CLAUDE.md.template,
 # and the harness/ guide to the current working directory.
@@ -46,6 +49,9 @@ PACK_COMMANDS=(
   "learnings        learnings.md        /learnings"
   "shipping-retro   shipping-retro.md   /shipping-retro"
   "teach-team       teach-team.md       /teach-team"
+  "validate-idea    validate-idea.md    /validate-idea"
+  "go-to-market     go-to-market.md     /go-to-market"
+  "pricing-strategy pricing-strategy.md /pricing-strategy"
 )
 
 # Harness guide files fetched alongside the full pack.
@@ -143,6 +149,9 @@ if [ -z "${CAPABILITY}" ]; then
   echo "  /learnings         -- review, search, and prune what Friday's learned"
   echo "  /shipping-retro    -- weekly reflection from your real commit history"
   echo "  /teach-team        -- scaffold an onboarding plan for a team member"
+  echo "  /validate-idea     -- 7-dimension validation, build/pivot/kill verdict"
+  echo "  /go-to-market      -- phased launch plan, pre-launch through 90 days"
+  echo "  /pricing-strategy  -- value-based pricing and tier design"
   echo
   echo "Read harness/00-how-friday-works.md to understand what you just installed."
 
@@ -166,7 +175,7 @@ else
 
   if [ -z "${matched}" ]; then
     echo "Unknown capability: ${CAPABILITY}"
-    echo "Available: voice-installer, decide, brief, meetingprep, weeklyreview, amplify, new-capability, explore-idea, scope-decision, learnings, shipping-retro, teach-team"
+    echo "Available: voice-installer, decide, brief, meetingprep, weeklyreview, amplify, new-capability, explore-idea, scope-decision, learnings, shipping-retro, teach-team, validate-idea, go-to-market, pricing-strategy"
     exit 1
   fi
 fi
