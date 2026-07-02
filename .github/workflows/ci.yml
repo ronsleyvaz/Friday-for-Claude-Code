@@ -13,6 +13,9 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      - name: Install test runner
+        run: pip install pytest==9.0.3
+
       - name: Run test suite
         run: python3 -m pytest tests/ -v
 
